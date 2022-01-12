@@ -24,7 +24,7 @@ public class AccountDriver {
 
         System.out.print("Enter deposit amount for Muri's Account : ");
         depositAmount = input.nextDouble();
-        System.out.printf("%adding %.2f to Muri's balance%n%n",
+        System.out.printf("%n adding %.2f to Muri's balance%n%n",
                 depositAmount);
         secondAccount.deposit(depositAmount);
 

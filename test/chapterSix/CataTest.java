@@ -3,6 +3,7 @@ package chapterSix;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class CataTest {
 
@@ -100,10 +101,14 @@ public class CataTest {
     }
 
 
+    @Test
+    public void bikeCanBeTurnedOnTest(){
+        Cata bikeOn = new Cata();
+        boolean turnOn;
+
+    }
+    }
 
 
 
-
-
-}
 
