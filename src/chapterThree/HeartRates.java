@@ -1,5 +1,6 @@
 package chapterThree;
 
+import java.util.Scanner;
 import java.time.LocalDate;
 
 public class HeartRates {
@@ -19,26 +20,29 @@ public class HeartRates {
 
     private String firstName;
     private String lastName;
-   // private int dateOfBirth;
+    // private int dateOfBirth;
     private LocalDate dateOfBirth;
 
-    public HeartRates(String firstName, String lastName, int year, int month, int dayOfMonth ){
+    public HeartRates(String firstName, String lastName, int year, int month, int dayOfMonth) {
         this.firstName = firstName;
         this.lastName = lastName;
-      //  this.dateOfBirth = dateOfBirth;
-        dateOfBirth = LocalDate.of(year, month, dayOfMonth) ;
+        //  this.dateOfBirth = dateOfBirth;
+        dateOfBirth = LocalDate.of(year, month, dayOfMonth);
     }
 
-    public void setFirstName(String firstName){
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
-    public String getFirstName(){
+
+    public String getFirstName() {
         return firstName;
     }
-    public void setLastName(String lastName){
+
+    public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-    public String getLastName(){
+
+    public String getLastName() {
         return lastName;
     }
 
@@ -49,15 +53,41 @@ public class HeartRates {
     public void setDateOfBirth(LocalDate dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
-//    public void setDateOfBirth(int dateOfBirth){
-//        this.dateOfBirth = dateOfBirth;
-//    }
-//    public int getDateOfBirth(){
-//        return dateOfBirth;
-//    }
-//
-//    public void calculateHeartRates(){
+
+    public void calculateHeartRates() {
 
     }
+
+
+    public static void main (String[]args){
+
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("Enter your first name");
+            String name1 = scanner.nextLine();
+
+            Scanner scanner1 = new Scanner(System.in);
+            System.out.println("Enter your second name");
+            String name2 = scanner1.nextLine();
+
+            Scanner scanner2 = new Scanner(System.in);
+            System.out.println("Enter your year of birth");
+            int yearOfBirth = scanner2.nextInt();
+
+            Scanner scanner3 = new Scanner(System.in);
+            System.out.println("Enter your month of birth");
+            int monthOfBirth = scanner3.nextInt();
+
+            Scanner scanner4 = new Scanner(System.in);
+            System.out.println("Enter your day of birth");
+            int dayOfMonth = scanner4.nextInt();
+
+            HeartRates heartRates = new HeartRates(name1, name2, yearOfBirth, monthOfBirth, dayOfMonth);
+
+
+        }
+
+
+    }
+
 
 
