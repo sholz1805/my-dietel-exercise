@@ -18,6 +18,6 @@ public class NumberFactors {
                         count++;}
                 }
             }
-        System.out.println(count);
+        System.out.printf("The total factors of %d is : %d", number ,count);
     }
     }

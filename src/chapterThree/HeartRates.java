@@ -1,8 +1,5 @@
 package chapterThree;
 
-import java.util.Scanner;
-import java.time.LocalDate;
-
 public class HeartRates {
 //the formula for calculating
 //your maximum heart rate in beats per minute is 220 minus your age in years. Your target
@@ -20,71 +17,61 @@ public class HeartRates {
 
     private String firstName;
     private String lastName;
-    // private int dateOfBirth;
-    private LocalDate dateOfBirth;
+    private int day;
+    private int month;
+    private int year;
 
-    public HeartRates(String firstName, String lastName, int year, int month, int dayOfMonth) {
+//    public static void getDateOfBirth(int day, int month, int year){
+//    Scanner scanner = new Scanner(System.in);
+//    day = scanner.nextInt(); month = scanner.nextInt(); year = scanner.nextInt();
+//        System.out.printf("%2d/%2d/%4d", day, month, year);
+//    }
+    public HeartRates(String firstName, String lastName, int day, int month, int year) {
         this.firstName = firstName;
         this.lastName = lastName;
-        //  this.dateOfBirth = dateOfBirth;
-        dateOfBirth = LocalDate.of(year, month, dayOfMonth);
+        this.day = day;
+        this.month = month;
+        this.year = year;
     }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+//    public void setFirstName(String firstName) {
+//        this.firstName = firstName;
+//    }
+//    public String getFirstName() {
+//        return firstName;
+//    }
+//    public void setLastName(String lastName) {
+//        this.lastName = lastName;
+//    }
+//    public String getLastName() {
+//        return lastName;
+//    }
+    public void setDay(int day){
+        this.day = day;
     }
-
-    public String getFirstName() {
-        return firstName;
+    public int getDay(){
+        return day;
     }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setMonth(int month){
+        this.month = month;
     }
-
-    public String getLastName() {
-        return lastName;
+    public int getMonth(){
+        return month;
     }
-
-    public LocalDate getDateOfBirth() {
-        return dateOfBirth;
+    public void setAgeInYears(int year){
+        year = 2021 -  year;
+        this.year = year;
     }
-
-    public void setDateOfBirth(LocalDate dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
+    public int getYear(){
+        return year;
     }
-
-    public void calculateHeartRates() {
-
+    public int calculateHeartRates() {
+        int max = 220 - getYear();
+        return max;
     }
-
-
-    public static void main (String[]args){
-
-            Scanner scanner = new Scanner(System.in);
-            System.out.println("Enter your first name");
-            String name1 = scanner.nextLine();
-
-            Scanner scanner1 = new Scanner(System.in);
-            System.out.println("Enter your second name");
-            String name2 = scanner1.nextLine();
-
-            Scanner scanner2 = new Scanner(System.in);
-            System.out.println("Enter your year of birth");
-            int yearOfBirth = scanner2.nextInt();
-
-            Scanner scanner3 = new Scanner(System.in);
-            System.out.println("Enter your month of birth");
-            int monthOfBirth = scanner3.nextInt();
-
-            Scanner scanner4 = new Scanner(System.in);
-            System.out.println("Enter your day of birth");
-            int dayOfMonth = scanner4.nextInt();
-
-            HeartRates heartRates = new HeartRates(name1, name2, yearOfBirth, monthOfBirth, dayOfMonth);
-
-
-        }
+    public double calculateTargetHeartRates(){
+        double target = 0.7 * calculateHeartRates();
+        return target;
+    }
 
 
     }

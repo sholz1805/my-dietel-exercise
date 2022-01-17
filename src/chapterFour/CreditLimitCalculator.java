@@ -41,30 +41,25 @@ public class CreditLimitCalculator {
         return creditLimit;
     }
 
-
+    public static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+
         System.out.println("Enter acc num");
         int acc = scanner.nextInt();
 
-        Scanner scanner1 = new Scanner(System.in);
         System.out.println("Enter opening balance");
-        int bal = scanner1.nextInt();
+        int bal = scanner.nextInt();
 
-        Scanner scanner2 = new Scanner(System.in);
         System.out.println("Enter total charges");
-        int charges = scanner2.nextInt();
+        int charges = scanner.nextInt();
 
-        Scanner scanner3 = new Scanner(System.in);
         System.out.println("Enter total credit");
-        int credit = scanner3.nextInt();
+        int credit = scanner.nextInt();
 
-        Scanner scanner4 = new Scanner(System.in);
         System.out.println("Enter credit limit");
-        int crLimit = scanner4.nextInt();
+        int crLimit = scanner.nextInt();
 
         CreditLimitCalculator sample = new CreditLimitCalculator(acc, bal, charges, credit, crLimit);
-
 
 
         int newBalance = bal + charges - credit;

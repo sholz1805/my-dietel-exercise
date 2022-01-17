@@ -14,19 +14,19 @@ public class SeparateDigits {
 
             System.out.println("Enter a valid number");
             int scannedValue= input.nextInt();
+           String stringDigit = scannedValue + "";
 
-            firstDigit=scannedValue/10000;
-
-            secondDigit=(scannedValue%10000)/1000;
-
-            thirdDigit=(scannedValue%1000)/100;
-
-            fourthDigit=(scannedValue%100)/10;
-
-            fifthDigit=(scannedValue%10)/1;
-
-            System.out.printf("%d   %d   %d   %d   %d", firstDigit,secondDigit, thirdDigit, fourthDigit, fifthDigit);
-
+            if (stringDigit.length() == 5) {
+                firstDigit = scannedValue / 10000;
+                secondDigit = (scannedValue % 10000) / 1000;
+                thirdDigit = (scannedValue % 1000) / 100;
+                fourthDigit = (scannedValue % 100) / 10;
+                fifthDigit = (scannedValue % 10);
+                System.out.printf("%d   %d   %d   %d   %d", firstDigit, secondDigit, thirdDigit, fourthDigit, fifthDigit);
+            }
+         else{
+             System.out.println("excess numbers");
+            }
         }
     }
 

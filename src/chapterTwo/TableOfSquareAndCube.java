@@ -12,7 +12,7 @@ public class TableOfSquareAndCube {
         for(num=0; num<=10; num++){
             square= num*num;
             cube= num* num* num;
-            System.out.printf("%d  %d  %d%n", num, square, cube);
+            System.out.printf("%d  %4d  %4d%n", num, square, cube);
         }
 
     }
