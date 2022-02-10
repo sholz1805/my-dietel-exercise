@@ -17,7 +17,6 @@ public class Account {
     {
         if (depositAmount > 0.0){
             balance = balance + depositAmount;
-            this.balance = balance;
         }
         else{
             System.out.println("cannot deposit amount!!!!!!!!");
@@ -29,7 +28,6 @@ public class Account {
         if(withdrawalAmount > 0.0 & withdrawalAmount <= balance)
         {
             balance = balance - withdrawalAmount;
-            this.balance = balance;
         }
         else
         {

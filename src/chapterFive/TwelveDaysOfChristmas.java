@@ -7,93 +7,41 @@ public class TwelveDaysOfChristmas {
 //        be used to print the day (“first,” “second,” and so on). A separate switch statement should be used
 //        to print the remainder of each verse.
 
+        for (int i = 1; i <= 12; i++) {
+            System.out.print("On the " + i);
 
-//        String twelveDays = """
-//                The FIRST day of Christmas, My true love sent to me
-//                A partridge in a pear tree.
-//
-//                The SECOND day of Christmas,My true love sent to me
-//                Two turtle doves, and A partridge in a pear tree.
-//
-//                The THIRD day of Christmas, My true love sent to me
-//                Three French hens, Two turtle doves, and A partridge in a pear tree.
-//
-//                The FOURTH day of Christmas, My true love sent to me Four colly birds,
-//                Three French hens, Two turtle doves, and A partridge in a pear tree.
-//
-//                The FIFTH day of Christmas,My true love sent to me Five gold rings,
-//                Four colly birds, Three French hens, Two turtle doves, a A partridge in a pear tree.
-//
-//                The SIXTH day of Christmas, My true love sent to me Six geese a laying,
-//                Five gold rings,Four colly birds, Three French hens, Two turtle doves, and
-//                A partridge in a pear tree.
-//
-//                The SEVENTH day of Christmas,My true love sent to me Seven swans a swimming,
-//                Six geese a laying, Five gold rings, Four colly birds, Three French hens,
-//                Two turtle doves, and A partridge in a pear tree.
-//
-//                The EIGHT day of Christmas, My true love sent to me Eight maids a milking,
-//                Seven swans a swimming, Six geese a laying, Five gold rings, Four colley birds,
-//                Three French hens, Two turtle doves, and A partridge in a pear tree.
-//
-//                The NINTH day of Christmas, My true love sent to me Nine drummers drumming,
-//                Eight maids a milking, Seven swans a swimming, Six geese a laying, Five gold rings,
-//                Four colley birds, Three French hens, Two turtle doves, and A partridge in a pear tree.
-//
-//                The TENTH day of Christmas,My true love sent to me Ten pipers piping,
-//                Nine drummers drumming,Eight maids a milking, Seven swans a swimming,Six geese a laying,
-//                Five gold rings, Four colley birds,Three French hens, Two turtle doves, and
-//                A partridge in a pear tree.
-//
-//                The ELEVENTH day of Christmas My true love sent to me Eleven ladies dancing,
-//                Ten pipers piping, Nine drummers drumming, Eight maids a milking,Seven swans a swimming,
-//                Six geese a laying, Five gold rings,Four colly birds, Three French hens,
-//                Two turtle doves, and A partridge in a pear tree.
-//
-//                The TWELFTH day of Christmas My true love sent to me Twelve lords a leaping,
-//                Eleven ladies dancing, Ten pipers piping, Nine drummers drumming, Eight maids a milking,
-//                Seven swans a swimming, Six geese a laying,Five gold rings, Four colley birds,
-//                Three French hens, Two turtle doves, and A partridge in a pear tree.
-//                """;
-
-        int daysOfChristmas = 1;
-        while (daysOfChristmas > 0) {
-
-            switch (daysOfChristmas) {
-                case 1:
-                    System.out.println("First");
-                case 2:
-                    System.out.println("Second");
-                case 3:
-                    System.out.println("Third");
-//            case 4:
-//                System.out.println("Fourth");
-//            case 5:
-//                System.out.println("Fifth");
-//            case 6:
-//                System.out.println("Sixth");
-//            case 7:
-//                System.out.println("Seventh");
-//            case 8:
-//                System.out.println("Eight");
-//            case 9:
-//                System.out.println("Ninth");
-//            case 10:
-//                System.out.println("Tenth");
-//            case 11:
-//                System.out.println("Eleventh");
-//            case 12:
-//                System.out.println("Twelfth");
+            switch (i) {
+                case 1 -> System.out.println("st" + " day of christmas");
+                case 2 -> System.out.println("nd" + " day of christmas");
+                case 3 -> System.out.println("rd" + " day of christmas");
+                default -> System.out.println("th" + " day of christmas");
             }
-            daysOfChristmas--;
+
+            System.out.println("My true love sent to me");
+
+            for (int j = i; j > 0 ; j--) {
+                switch (j) {
+                    case 12 -> System.out.println("Twelve lords a leaping");
+                    case 11 -> System.out.println("Eleven ladies dancing");
+                    case 10 -> System.out.println("Ten pipers piping");
+                    case 9 -> System.out.println("Nine drummers drumming");
+                    case 8 -> System.out.println("Eight maids a milking");
+                    case 7 -> System.out.println("Seven swans a swimming");
+                    case 6 -> System.out.println("Six geese a laying");
+                    case 5 -> System.out.println("Five gold rings");
+                    case 4 -> System.out.println("Four colley birds");
+                    case 3 -> System.out.println("Three French hens");
+                    case 2 -> System.out.println("Two turtle doves");
+                    case 1 -> System.out.println("A partridge in a pear tree.");
+
+                }
+            }
+                    System.out.println();
         }
-
-
     }
-//        int otherVerses=0;
-//        switch (otherVerses){
-//            case 1:
+}
 
-        }
+
+
 
 

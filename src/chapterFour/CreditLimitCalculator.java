@@ -44,6 +44,9 @@ public class CreditLimitCalculator {
     public static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
 
+        int customer = 0;
+        do{
+
         System.out.println("Enter acc num");
         int acc = scanner.nextInt();
 
@@ -75,7 +78,11 @@ public class CreditLimitCalculator {
                     System.out.println("Your credit Limit is: " + crLimit);
 
             System.out.println("Your new balance is: " + newBalance);
+            System.out.println();
             }
+            customer++;
+        }
+        while (customer <= 3);
 
         }
     }

@@ -8,5 +8,7 @@ public class GroupA {
                 }
             System.out.println();
         }
+//        for (int i = 0; i < ; i++) {
+
+        }
     }
-}
