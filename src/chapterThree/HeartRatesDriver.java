@@ -2,7 +2,7 @@ package chapterThree;
 
 import java.util.Scanner;
 
-public class HeartRatesDriver {
+public class  HeartRatesDriver {
     private static Scanner scanner = new Scanner(System.in);
     public static void main (String[]args){
 
