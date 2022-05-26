@@ -11,7 +11,7 @@ public class Cata {
     }
 
     public int setPriceFor(int price) {
-        if (price > 1 && price <= 4) {
+        if (price >= 1 && price <= 4) {
             price = (price * 2000);
             return price;
         }
@@ -45,5 +45,4 @@ public class Cata {
         }
         return 0;
     }}
-
 

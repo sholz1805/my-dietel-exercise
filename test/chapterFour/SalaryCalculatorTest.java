@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class SalaryCalculatorTest {
+class  SalaryCalculatorTest {
     SalaryCalculator salaryCalculator;
     @BeforeEach
     public void setUp(){
